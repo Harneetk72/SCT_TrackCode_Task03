@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tic Tac Toe Game - Purple Theme</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="" role="main" aria-live="polite">
+    <h1>Tic Tac Toe</h1>
+
+    <section id="start-screen" class="page active" aria-label="Game setup">
+      <form class="name-inputs" id="setup-form" novalidate>
+        <div class="input-group">
+          <input type="text" id="player1" name="player1" autocomplete="off" required aria-required="true" aria-describedby="player1-desc"/>
+          <label for="player1" class="input-label">Enter Player 1 Name</label>
+          <span id="player1-desc" class="sr-only">Player 1 name input</span>
+        </div>
+        <div class="input-group" id="player2-group">
+          <input type="text" id="player2" name="player2" autocomplete="off" required aria-required="true" aria-describedby="player2-desc"/>
+          <label for="player2" class="input-label">Enter Player 2 Name</label>
+          <span id="player2-desc" class="sr-only">Player 2 name input</span>
+        </div>
+        <select id="game-mode" aria-label="Select game mode" title="Select game mode">
+          <option value="2players">Two Players</option>
+          <option value="computer">Play Against Computer</option>
+        </select>
+        <button id="start-game" type="submit" aria-label="Start the game">Start Game</button>
+      </form>
+    </section>
+
+    <section id="game-screen" class="page" aria-label="Tic Tac Toe game board" aria-live="polite">
+      <div id="game-board" role="grid" aria-describedby="gameInstructions">
+        <p id="gameInstructions" class="sr-only">Tic Tac Toe 3x3 grid. Click cell to play.</p>
+        <button class="cell" role="gridcell" aria-label="Cell 1" tabindex="0"></button>
+        <button class="cell" role="gridcell" aria-label="Cell 2" tabindex="0"></button>
+        <button class="cell" role="gridcell" aria-label="Cell 3" tabindex="0"></button>
+        <button class="cell" role="gridcell" aria-label="Cell 4" tabindex="0"></button>
+        <button class="cell" role="gridcell" aria-label="Cell 5" tabindex="0"></button>
+        <button class="cell" role="gridcell" aria-label="Cell 6" tabindex="0"></button>
+        <button class="cell" role="gridcell" aria-label="Cell 7" tabindex="0"></button>
+        <button class="cell" role="gridcell" aria-label="Cell 8" tabindex="0"></button>
+        <button class="cell" role="gridcell" aria-label="Cell 9" tabindex="0"></button>
+      </div>
+      <div class="msg-container" id="message" aria-live="assertive"></div>
+      <div class="buttons">
+        <button id="new-game" type="button" aria-label="Start a new game">New Game</button>
+        <button id="back-to-start" type="button" aria-label="Return to setup screen">Back to Setup</button>
+      </div>
+    </section>
+  </main>
+
+ <script src="script.js"></script>
+</body>
+</html>
