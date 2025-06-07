@@ -19,12 +19,11 @@ It recreates the classic Tic Tac Toe experience where players take turns marking
 - 🧠 Automatic detection of win/draw states
 - 🧼 Clear terminal UI with real-time board updates
 - 🔁 Option to replay after a match
-- 💡 Beginner-friendly Python code structure
 
 ---
 
 ## 🛠️ Technologies Used
-- Python 3.x
+- HTML,CSS,JS 
 - Terminal / Command Line Interface
 - Git & GitHub (for version control and collaboration)
 
